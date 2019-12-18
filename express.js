@@ -7,7 +7,7 @@ const app = express();
 app.post('/sms', (req, res) => {
   const twiml = new MessagingResponse();
 
-  twiml.message('Jon my app is super cool');
+  twiml.message('Hi, my name is twimbot and I am here to help');
 
   res.writeHead(200, {'Content-Type': 'text/xml'});
   res.end(twiml.toString());
